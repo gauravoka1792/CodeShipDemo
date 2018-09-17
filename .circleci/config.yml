@@ -31,10 +31,7 @@ jobs:
           command: bundle exec fastlane $FASTLANE_LANE
       - run:
           name: Deploy to hockey app
-          command: hockey(
- 							api_token: "69ffd7058029458c9deb1816125d2c65",
-  							ipa: "./CircleCI2.0.ipa",
-  							notes: "Test Build")
+          command: hockey(api_token:"69ffd7058029458c9deb1816125d2c65", ipa:"./CircleCI2.0.ipa", notes:"Test Build")
 workflows:
   version: 2
   build-deploy-dev:
